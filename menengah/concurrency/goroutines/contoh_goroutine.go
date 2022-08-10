@@ -6,12 +6,12 @@ import (
 )
 
 func main() {
-	go start()
+	go func(){fmt.Println("menjalankan fungsi goroutine")}()
 	fmt.Println("malingit")
 	time.Sleep(1 * time.Second)
 	fmt.Println("selesai")
 }
 
-func start() {
-	fmt.Println("menjalankan fungsi goroutine")
-}
+//func start() {
+//	fmt.Println("menjalankan fungsi goroutine")
+//}
